@@ -37,7 +37,6 @@ if (data.daily.precipitation_hours[days] > 0) {
 } else {
     console.log ("You will not need your galoshes ")
 }
-console.log(result)
 
 if (days == 0) {
     console.log("today.")
