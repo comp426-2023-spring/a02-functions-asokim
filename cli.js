@@ -25,7 +25,7 @@ const latitude = args.n || args.s*-1;
 //make request
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' +latitude+'&longitude='+longitude+'&daily=precipitation_hours&timezone='+timezone);
 const data = await response.json();
-const days = args.d || 1;
+const days = args.d ?? 1;
 
 if (args.j) {
     console.log(data);
