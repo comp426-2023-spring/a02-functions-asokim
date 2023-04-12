@@ -32,6 +32,14 @@ if (args.j) {
     process.exit(0);
 }
 
+let result;
+if (data.daily.precipitation_hours[days] > 0) {
+    result += "You might need your galoshes "
+} else {
+    result += "You will not need your galoshes "
+}
+console.log(result)
+
 if (days == 0) {
     console.log("today.")
   } else if (days > 1) {
@@ -39,3 +47,6 @@ if (days == 0) {
   } else {
     console.log("tomorrow.")
   }
+
+
+
