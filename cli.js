@@ -32,19 +32,23 @@ if (args.j) {
     process.exit(0);
 }
 
+let result = "";
 if (data.daily.precipitation_hours[days] > 0) {
-    console.log ("You might need your galoshes ")
+    result += "You might need your galoshes "
 } else {
-    console.log ("You will not need your galoshes ")
+    result += "You will not need your galoshes "
 }
 
 if (days == 0) {
-    console.log("today.")
+    result += "today."
   } else if (days > 1) {
-    console.log("in " + days + " days.")
+    result += "in " + days + " days."
   } else {
-    console.log("tomorrow.")
+    result += "tomorrow."
   }
+
+  console.log(result)
+
 
 
 
